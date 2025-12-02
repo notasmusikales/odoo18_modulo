@@ -7,9 +7,11 @@
             <xpath expr="//th[@name='th_description']" position="before">
                 <th>Image Ref.</th>
             </xpath>
-            <xpath expr="//th[@name='th_description']" position="before">
-                <td name="td_image_product">
-                <span t-field="line.product_id.image_128" t-options="{'widget':'image'}"/>
-                </span>
+
+            <xpath expr="//td[@name='td_name']" position="before">
+                <td name="td_image_product"><span t-field="line.product_id.image_128" t-options="{'widget':'image'}"></span></td>
+            </xpath>
+
+        </field>
     </record>
 </odoo>
