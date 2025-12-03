@@ -1,21 +1,25 @@
 {
-    'name': 'User Task Manager',
-    'version': '1.0',
-    'category': 'Tools',
-    'summary': 'Manage user task efficiently',
-    'description': """ Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    Donec ut ante fermentum, mattis ante in, ornare arcu. Lorem ipsum dolor sit amet, 
-    consectetur adipiscing elit.""",
-    'author': 'Noel',
-    'website': 'http://miweb.com',
-    'depends': ["base"],
+    'name': 'User Task Manager',          # Nombre del módulo tal como aparecerá en Odoo
+    'version': '1.0',                     # Versión del módulo
+    'category': 'Tools',                  # Categoría en el listado de apps de Odoo
+    'summary': 'Manage user task efficiently',  # Resumen corto (se muestra en la ficha del módulo)
+
+    'description': """ 
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris 
+    dignissim commodo sollicitudin. Nulla tristique ipsum at urna fringilla finibus. 
+    """,                                 # Descripción larga del módulo (texto informativo)
+    
+    'author': 'Rafael',                  # Autor del módulo
+    'website': 'https://miweb.com',      # Web del autor o del proyecto
+
+    'depends': ["base"],                 # Módulos de los que depende (base es el mínimo en casi todos)
+    
     'data': [
-        "security/task_security.xml",
-        "security/ir.model.access.csv",
-        "views/task_views.xml",
+        "security/task_security.xml",    # Reglas de seguridad (grupos, permisos de menú, etc.)
+        "security/ir.model.access.csv",  # Permisos de acceso al modelo (lectura, escritura, etc.)
+        "views/task_views.xml",          # Vistas (formularios, árboles, menús) del módulo
     ],
-    'installable': True,
-    'application': True,
 
-
+    'installable': True,                 # Indica que el módulo se puede instalar
+    'application': True,                 # Aparece como aplicación en el menú principal de Odoo
 }

@@ -7,55 +7,56 @@
             <form string="User Task">
                 <sheet>
                     <group>
-                        <field name="name"/>
-                        <field name="description"/>
-                        <field name="priority"/>
-                        <field name="state"/>
-                        <field name="deadline"/>
-                        <field name="user_id" readonly="1"/>
-                        <field name="is_done" readonly="1"/>
+                        <field name="name" />
+                        <field name="description" />
+                        <field name="priority" />
+                        <field name="state" />
+                        <field name="deadline" />
+                        <field name="user_id" readonly="1" />
+                        <field name="is_done" readonly="1" />
                     </group>
                 </sheet>
+            
             </form>
         </field>
     </record>
 
-    <!--Vista tipo lista-->
-    <record id="view_user_taski_list" model="ir.ui.view">
+    <!-- Vista tipo lista -->
+    <record id="view_user_task_list" model="ir.ui.view">
         <field name="name">user.task.list</field>
         <field name="model">user.task</field>
         <field name="arch" type="xml">
             <list string="Tareas">
-                <field name="name"/>
-                <field name="priority"/>
-                <field name="state"/>
-                <field name="deadline"/>
-                <field name="is_done"/>
+                <field name="name" />
+                <field name="priority" />
+                <field name="state" />
+                <field name="deadline" />
+                <field name="is_done" />
             </list>
         </field>
     </record>
 
-    <!-- Acción -->
+    <!-- Action -->
     <record id="view_user_task" model="ir.actions.act_window">
         <field name="name">Mis Tareas</field>
         <field name="res_model">user.task</field>
         <field name="view_mode">list,form</field>
         <field name="help" type="html">
-            <p>Desde aquí puedes gestionar tus tareas personales.</p>
+            <p>Desde aquí puedes gestionar tus tareas personales</p>
         </field>
     </record>
 
-    <!-- Menú -->
+    <!-- Menu -->
     <menuitem 
-        id="menu_user_task_root" 
-        name="Tareas"
+        id="menu_user_task_root"
+        name="Gestor de tareas"
         sequence="10"
     />
 
     <menuitem 
-        id="menu_user_task" 
-        name="Mis Tareas" 
-        parent="menu_user_task_root" 
+        id="menu_user_task"
+        name="Mis tareas"
+        parent="menu_user_task_root"
         action="view_user_task"
         sequence="20"
     />
