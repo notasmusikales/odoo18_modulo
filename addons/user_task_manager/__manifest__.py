@@ -9,7 +9,7 @@
     dignissim commodo sollicitudin. Nulla tristique ipsum at urna fringilla finibus. 
     """,                                 # Descripción larga del módulo (texto informativo)
     
-    'author': 'Rafael',                  # Autor del módulo
+    'author': 'Noel',                  # Autor del módulo
     'website': 'https://miweb.com',      # Web del autor o del proyecto
 
     'depends': ["base"],                 # Módulos de los que depende (base es el mínimo en casi todos)
