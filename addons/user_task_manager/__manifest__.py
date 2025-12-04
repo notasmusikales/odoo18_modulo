@@ -22,4 +22,9 @@
 
     'installable': True,                 # Indica que el módulo se puede instalar
     'application': True,                 # Aparece como aplicación en el menú principal de Odoo
+    "assets": {
+        "web.assets_backend": [
+            "/user_task_manager/static/src/css/task_kanban.css",
+        ],
+
 }

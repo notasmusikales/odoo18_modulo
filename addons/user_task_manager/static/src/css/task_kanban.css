@@ -1,0 +1,10 @@
+/*Estilo general de la tarjeta*/
+.o_kanban_card.user_task_kanban_card {
+    border-radius: 12px;
+    padding: 15px;
+    margin: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    border-left: 6px solid #6c757d; /* Color de borde izquierdo */
+    transition: all 0.3s ease;
+}
