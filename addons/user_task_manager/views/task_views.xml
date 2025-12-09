@@ -53,19 +53,23 @@
                 <template>
                     <t t-name="kanban-box">
                         <t t-if="record.priority and record.priority.raw_value">
-                            <div class="oe_kanban_card user_task_kanban oe_kanban_global_click">
+                            <div t-att-class=" 'oe_kanban_card user_task_kanban oe_kanban_global_click priority_' + record.priority.raw_value">
                                 <t t-call="user_task_manager.kanban_content" />
                             </div>
                         </t>
 
                         <t t-if="!(record.priority and record.priority.raw_value)">
-                            <t t-call="user_task_manager.kanban_content" />
+                            
+                            <div t-att-class=" 'oe_kanban_card user_task_kanban oe_kanban_global_click priority_0' ">
+                                <t t-call="user_task_manager.kanban_content" />
+                            
+                            </div>
                         </t>
                     </t>
 
                     <!-- Crear plantilla -->
                     <t t-name="user_task_manager.kanban_content">
-                        <div class="">
+                        <div class="o_kanban_details">
                             <div>
                                 <strong>
                                     <field name="name" />
@@ -75,27 +79,28 @@
                                 <field name="description" />
                             </div>
                             <div>
-                                <i class="" />
+                                <i class="fa fa-calendar" />
                                 <field name="deadline" />
                             </div>
                             <div>
-                                <i class="" />
+                                <i class="fa fa-flag" />
                                 <field name="priority" />
                             </div>
                         </div>
-                        <div class="">
+                        <div class="oe_kanban_footer d-flex justify-content-between align-items-center">
                             <span>
-                                <i class="" />
+                                <i class="fa fa-user" />
                                 <field name="user_id" />
                             </span>
                             <t t-if="record.priority and record.priority.raw_value">
-                                <span class="" t-attf-class="">
+                                <span class="badge badge-primary"
+                                     t-attf-class="task-state-badge state-#{record.state.raw_value}">
                                     <t t-esc="record.state.value" />
                                 </span>
                             </t>
                         </div>
                         <t t-if="record.is_done and record.is_done.raw_value">
-                            <i class="" title="Tarea completada" />
+                            <i class="fa fa-check-circle task-done" title="Tarea completada" />
                         </t>
 
                     </t>
