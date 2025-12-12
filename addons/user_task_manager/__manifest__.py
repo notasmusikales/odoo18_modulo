@@ -1,12 +1,11 @@
 {
-    'name': 'User Task Manager Examen Práctico',          # Nombre del módulo tal como aparecerá en Odoo
+    'name': 'User Examen Práctico',          # Nombre del módulo tal como aparecerá en Odoo
     'version': '1.0',                     # Versión del módulo
     'category': 'Tools',                  # Categoría en el listado de apps de Odoo
-    'summary': 'Manage user task efficiently',  # Resumen corto (se muestra en la ficha del módulo)
+    'summary': 'Examen práctico efficiently',  # Resumen corto (se muestra en la ficha del módulo)
 
     'description': """ 
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris 
-    dignissim commodo sollicitudin. Nulla tristique ipsum at urna fringilla finibus. 
+    Descripcion del módulo de User Examen Práctico
     """,                                 # Descripción larga del módulo (texto informativo)
     
     'author': 'Noel',                  # Autor del módulo
