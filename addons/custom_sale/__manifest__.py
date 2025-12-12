@@ -1,5 +1,5 @@
 {
-    "name":"Personalización de formato de ventas",
+    "name":"Equipo de ventas personalizado",
     "data":[
         "views/sale_order.xml"
     ],

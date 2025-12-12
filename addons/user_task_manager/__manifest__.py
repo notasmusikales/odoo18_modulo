@@ -1,5 +1,5 @@
 {
-    'name': 'User Task Manager',          # Nombre del módulo tal como aparecerá en Odoo
+    'name': 'User Task Manager Examen Práctico',          # Nombre del módulo tal como aparecerá en Odoo
     'version': '1.0',                     # Versión del módulo
     'category': 'Tools',                  # Categoría en el listado de apps de Odoo
     'summary': 'Manage user task efficiently',  # Resumen corto (se muestra en la ficha del módulo)
