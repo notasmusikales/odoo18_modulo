@@ -23,7 +23,7 @@
     'application': True,                 # Aparece como aplicación en el menú principal de Odoo
     "assets": {
         "web.assets_backend": [
-            "/user_task_manager/static/src/css/task_kanban.css",
+            "/user_examen_practico/static/src/css/task_kanban.css",
         ],
     },
 }
