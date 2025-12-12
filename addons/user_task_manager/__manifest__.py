@@ -1,5 +1,5 @@
 {
-    'name': 'User Examen Práctico',          # Nombre del módulo tal como aparecerá en Odoo
+    'name': 'User Examen Práctico',       # Nombre del módulo tal como aparecerá en Odoo
     'version': '1.0',                     # Versión del módulo
     'category': 'Tools',                  # Categoría en el listado de apps de Odoo
     'summary': 'Examen práctico efficiently',  # Resumen corto (se muestra en la ficha del módulo)
